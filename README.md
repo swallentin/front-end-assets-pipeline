@@ -1,13 +1,13 @@
-# Boilerplated #
+# SMACSS and LESS boilerplated #
 
-> Boilerplated is a suggestion on how one could structure his or hers assets. It adopts the SMACSS for structuring your CSS and LESS to gain leverage of modern toolings and simple html tests written in Jade.
+> SMACSS and LESS boilerplated is a suggestion on how one could structure his or hers assets. It adopts the SMACSS for structuring your CSS and LESS to gain leverage of modern toolings and simple html tests written in Jade.
 
 ## How to setup ##
 
 1. Clone the repository
 2. Setup a build flow for the assets, the goal is to have the files in assets/ to generate output into the dist/ folder.
 
-Example 
+Example
 
 - ``assets/less/theme/default/master.less`` to ``dist/latest/theme/default/master.css``
 - ``assets/less/theme/default/tests/index.jade`` to ``dist/css/theme/default/tests/index.html``
