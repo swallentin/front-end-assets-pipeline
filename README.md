@@ -1,23 +1,29 @@
 # Boilerplated #
 
-> Boilerplated is a suggestion on how one could structure his or hers assets. It adopts the SMACSS for structuring your CSS and LESS to gain leverage of modern toolings. 
+> Boilerplated is a suggestion on how one could structure his or hers assets. It adopts the SMACSS for structuring your CSS and LESS to gain leverage of modern toolings and simple html tests written in Jade.
 
-## How to use ##
+## How to setup ##
 
 1. Clone the repository
-2. Create the folder dist/latest and put all your output in this directory, using either a build script or favorite tool, perhaps LiveReload.
+2. Setup a build flow for the assets, the goal is to have the files in assets/ to generate output into the dist/ folder.
 
-> My setup is adding this project to LiveReload and point the file assets/less/theme/default/master.less be built to dist/latest/theme/default/master.css.
+Example 
+
+- ``assets/less/theme/default/master.less`` to ``dist/latest/theme/default/master.css``
+- ``assets/less/theme/default/tests/index.jade`` to ``dist/css/theme/default/tests/index.html``
+
 
 ## Purpose ##
 
-- Allow me to quickly start a sandbox project that still has a good and familiar structure
+- Allow a developer to quickly start a sandbox project that still has a good and familiar structure
+- Simply development and testing of your css.
+- Offer a build script agnostic development environment.
+
 
 ## Structure ##
 
-- assets/ contains all development files
-- be build script agnostic, allowing you to determine your own structure.
-- dist/[version or latest] contains all output files. This is where one would put his or hers concatinated and minified css files.
+- ``assets/`` - contains all development files
+- ``dist/[version || latest]/`` - contains all output files, concatinated and/or minimized.
 
 ## Influences ##
 
