@@ -4,24 +4,24 @@
 
 // these tasks defaults to 'dist/revision/' folder
 // if specificed will build to 'dist/latest/' and '/dist/vX.Y.Z/'
-// *** add grunt-less(concat to master.css) task
-// add grunt-less-concat task
-// add grunt-lint task
+// *** add grunt-less(combine to master.css) task
+// add grunt-less-lint task
+// add grunt-less-combine task
 // add grunt-css-min task
-// add grunt-js-concat task
+// add grunt-js-combine task
 // add grunt-js-lint task
-// add grunt-js-concat task
+// add grunt-js-combine task
 // add grunt-js-min task
-// add grunt-git-tag-and-push task
+// *** add grunt-git-tag-and-push task - use npm version instead or vojts solution
 // add grunt-push-to-cdn task
 // add grunt-bump task
-// add grunt-release, executes theses tasks in sequence
+// add grunt-dist, executes theses tasks in sequence
 // * grunt-css task
 // * grunt-lint task
 // * grunt-css-min task
-// * grunt-js-concat
+// * grunt-js-combine
 // * grunt-js-lint
-// * grunt-js-concat
+// * grunt-js-combine
 // * grunt-js-min
 // * grunt-git-tag-and-push
 // * grunt-push-to-cdn
@@ -36,7 +36,7 @@ module.exports = function(grunt) {
     },
     // LESS mastering and minifying
     less: {
-      concat: {
+      combine: {
         options: {
           banner: "testing"
         },
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
     // Copy files from revision to 'latest' and 'vX.Y.Z'
     // Used for creating releases
     copy: {
-      release: {
+      dist: {
         files: {
          "dist/v<%=pkg.version%>/css/themes/default/": "dist/revision/css/themes/default/*.css",
          "dist/latest/css/themes/default/": "dist/revision/css/themes/default/*.css"
@@ -70,6 +70,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-copy');
 
-  grunt.registerTask('default', 'less:concat less:min');
-  grunt.registerTask('release', 'less:concat less:min copy:release');
+  grunt.registerTask('default', 'less:combine less:min');
+  grunt.registerTask('dist', 'less:combine less:min copy:dist');
 };
