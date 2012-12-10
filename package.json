@@ -2,7 +2,7 @@
   "name": "smacss-less-boilerplated",
   "title": "Simplified development using SMACSS, LESS and grunt",
   "description": "A boilerplate development project to help you boostrap a project quickly.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "http://swallentin.github.com",
   "author": {
     "name": "Stephan Wallentin",
