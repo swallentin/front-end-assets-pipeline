@@ -41,7 +41,7 @@ module.exports = function(grunt) {
           banner: "testing"
         },
         files: {
-          "dist/revision/css/theme/default/master.css": "assets/less/theme/default/master.less"
+          "dist/revision/css/themes/default/master.css": "assets/less/themes/default/master.less"
         }
       },
       min: {
@@ -49,16 +49,18 @@ module.exports = function(grunt) {
           yuicompress: true
         },
         files: {
-          "dist/revision/css/theme/default/master.min.css": "assets/less/theme/default/master.less"
+          "dist/revision/css/themes/default/master.min.css": "assets/less/themes/default/master.less"
         }
       }
     },
 
-    // Copy stuff that is used for releases
+    // Copy files from revision to 'latest' and 'vX.Y.Z'
+    // Used for creating releases
     copy: {
       release: {
         files: {
-         "dist/v<%=pkg.version%>/css/theme/default/master.css": "dist/revision/css/theme/default/master.css"
+         "dist/v<%=pkg.version%>/css/themes/default/": "dist/revision/css/themes/default/*.css",
+         "dist/latest/css/themes/default/": "dist/revision/css/themes/default/*.css"
         }
       }
     }
