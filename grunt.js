@@ -72,5 +72,4 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', 'less:concat less:min');
   grunt.registerTask('release', 'less:concat less:min copy:release');
-
 };
