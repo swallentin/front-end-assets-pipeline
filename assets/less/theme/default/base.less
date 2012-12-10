@@ -1,0 +1,95 @@
+/*======================================================
+
+Base rules are the defaults. They are almost exclusively single element selectors
+but it could include attribute selectors, pseudo-class selectors, child selectors 
+or sib- ling selectors. 
+Essentially, a base style says that wherever this element is on the page, 
+it should look like this.
+
+Examples of Base Styles:
+
+html, body, form { 
+  margin: 0; 
+  padding:0; 
+}
+
+input[type=text] { 
+  border: 1px solid999; 
+}
+
+a { 
+  color: #039;
+}
+
+a:hover {
+  color: #03C;
+}
+
+====================================================== */
+
+/*======================================================
+
+  CSS Base 
+
+======================================================== */
+
+html {
+  /* default font-size*/
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* sets 1em to 10px*/
+    font-size: 62.5%;
+}
+
+
+h1 {
+  font-size: 2em;
+}
+
+h1 a {
+  /* i want a font-size of 14px*/
+  font-size: 0.23333em ;  /* target / context 14px / 14px or 1em / 6em  */
+}
+
+h2 {
+  font-size: 1.9em;
+}
+
+h2 a {
+  font-size: 0.4em ;  /* target / context 20px / 50px or 2em / 5em  */
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h3 a {
+  font-size: 0.75em ;  /* target / context 30px / 40px or 3em / 4em  */
+}
+
+h4 {
+  font-size: 1.7em;
+}
+
+h4 a {
+  font-size: 0.8333333em ;  /* target / context 25px / 30px or 2.5em / 3em  */
+}
+
+h5 {
+  font-size: 1.6em;
+}
+
+h5 a {
+  font-size: 0.75em ;  /* target / context px / 20px or 1.5em / 2em  */
+}
+
+h6 {
+  font-size: 1.5em;
+}
+
+h6 a {
+  font-size: 0.75em ;  /* target / context 25px / 30px or 2.5em / 3em  */
+}
