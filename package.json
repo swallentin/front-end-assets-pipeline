@@ -14,9 +14,10 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "grunt-recess": "~0.1.4",
     "grunt-contrib-less": "~0.3.2",
     "grunt-contrib-copy": "~0.3.2",
-    "grunt-css": "~0.3.2",
+    "grunt-rigger": "",
     "grunt": "~0.3.17"
   },
   "keywords": []

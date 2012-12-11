@@ -1,0 +1,1 @@
+(function(e,t){typeof define=="function"&&define.amd&&define(["jQuery"],t)})(this,function(e){});
