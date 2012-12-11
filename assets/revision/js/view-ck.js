@@ -1,1 +1,0 @@
-var thisismyview="Myview";
