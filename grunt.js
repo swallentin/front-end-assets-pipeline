@@ -74,7 +74,6 @@ module.exports = function(grunt) {
   // Load tasks
   grunt.loadNpmTasks('grunt-recess');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-bump');
   grunt.loadNpmTasks('grunt-rigger');
 
   // Register tasks
