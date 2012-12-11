@@ -1,5 +1,5 @@
 {
-  "name": "smacss-less-boilerplated",
+  "name": "front-end-asset-pipline",
   "title": "Simplified development using SMACSS, LESS and grunt",
   "description": "A boilerplate development project to help you boostrap a project quickly.",
   "version": "0.1.0",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/swallentin/smacss-less-boilerplated.git"
+    "url": "https://github.com/swallentin/front-end-assets-pipeline"
   },
   "dependencies": {},
   "devDependencies": {

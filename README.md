@@ -1,10 +1,10 @@
-# SMACSS and LESS boilerplated #
+# front-end-asset-pipline #
 
-> SMACSS and LESS boilerplated is a suggestion on how one could structure his or hers assets. It adopts the SMACSS for structuring your CSS and LESS to gain leverage of modern toolings and simple html tests written in Jade. It uses grunt, npm and SEMVER for mastering, minifying, linting and builds.
+> front-end-asset-pipline is a suggestion on how one could structure his or hers assets. It adopts the SMACSS for structuring your CSS and LESS to gain leverage of modern toolings and simple html tests written in Jade. It uses grunt, npm and SEMVER for mastering, minifying, linting and builds.
 
 ## Quick setup ##
 
-1. ``git clone https://github.com/swallentin/smacss-less-boilerplated``
+1. ``git clone https://github.com/swallentin/front-end-assets-pipeline.git``
 2. ``cd smacss-lesss-boilerplated``
 3. ``npm install``
 4. ``grunt``
