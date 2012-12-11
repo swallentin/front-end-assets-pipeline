@@ -58,7 +58,7 @@ module.exports = function(grunt) {
         dest: 'dist/revision/js/app.amd.js'
       }
     },
-    // min id used to minify JS
+    // min is used to setup minify concated default and amd js files.
     min: {
       standard: {
         src: ['<banner:meta.banner>', '<config:concat.dist.dest>'],

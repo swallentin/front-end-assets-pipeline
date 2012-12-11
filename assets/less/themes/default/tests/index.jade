@@ -1,3 +1,9 @@
+mixin nav(items)
+  ul
+    - for (var item in items)
+      li
+        a(href="#")=items[item]
+
 extends ../../../tests/base
 
 block layout
@@ -6,13 +12,7 @@ block layout
       header
 
       nav
-        menu.ul
-          li
-            a(href="#") Home
-          li
-            a(href="#") About
-          li
-            a(href="#") Features
+        mixin nav(['Home', 'Documents', 'Tags', 'About Us', 'Contact'])
 
       footer
   .content
