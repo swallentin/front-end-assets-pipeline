@@ -75,7 +75,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-recess');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-rigger');
-
   // Register tasks
   
   // Combines all files, mainly used for development
